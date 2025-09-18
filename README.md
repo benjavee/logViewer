@@ -4,15 +4,15 @@
 logViewer is a powerful tool for viewing, filtering, and analyzing log files. It provides an intuitive interface to help users quickly find relevant information, highlight keywords, and export filtered results. Designed for developers and system administrators, logViewer simplifies log management and troubleshooting.
 <!-- Plugin description end -->
 
-logViewer is an application that allows you to display, filter, and analyze log files easily and efficiently.
+logViewer is an IntelliJ IDEA plugin that allows you to display, filter, and analyze log files easily and efficiently, built with Kotlin.
 
 ## Features
 
 - Load local log files
 - Filter by date, log level, message, etc.
 - Search and highlight keywords
-- Export filtered results
-- Intuitive user interface
+- Export filtered results as PDF reports
+- Intuitive user interface integrated with IntelliJ IDEA
 
 ## Installation
 
@@ -20,30 +20,25 @@ logViewer is an application that allows you to display, filter, and analyze log 
    ```bash
    git clone https://github.com/your-username/logViewer.git
    ```
-2. Install dependencies:
+2. Open the project in IntelliJ IDEA
+3. Build the project using Gradle:
    ```bash
-   cd logViewer
-   # Depending on your environment:
-   # For Java: mvn install
-   # For Node.js: npm install
+   ./gradlew build
    ```
 
 ## Usage
 
-1. Start the application:
-   ```bash
-   # Example for Java
-   mvn spring-boot:run
-   # Example for Node.js
-   npm start
-   ```
-2. Open your browser at the indicated address (e.g., http://localhost:8080)
-3. Import a log file and start analyzing
+1. Install the plugin in IntelliJ IDEA:
+   - Build > Prepare Plugin Module 'logViewer' for Deployment
+   - Install the plugin from disk in IntelliJ IDEA (Settings > Plugins > Install plugin from disk)
+2. Open your project in IntelliJ IDEA
+3. Use the logViewer tool window to import and analyze logs
+4. Export PDF reports with the export action
 
 ## Configuration
 
-- Configuration settings are located in the project's `config` file.
-- You can customize filters and display options as needed.
+- Configuration settings are available in the plugin settings page
+- You can customize filters, display options and report formats as needed
 
 ## Contributing
 
