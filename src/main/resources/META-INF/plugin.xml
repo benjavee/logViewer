@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>fr.javee.logviewer</id>
+    <name>Log Viewer</name>
+    <vendor>javee</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Log Viewer"
+                    secondary="true"
+                    icon="AllIcons.General.Note"
+                    anchor="bottom"
+                    factoryClass="fr.javee.logviewer.ui.LogViewerToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <action id="LogViewer.Refresh"
+                class="fr.javee.logviewer.actions.RefreshLogsAction"
+                text="Refresh logs"
+                description="Scan project logs"
+                icon="AllIcons.Actions.Refresh"/>
+    </actions>
+</idea-plugin>
